@@ -16,6 +16,10 @@
     font-family: Calibri, serif;
 }
 
+.price {
+    margin-left: 11px;
+}
+
 .success {
     font-family: Calibri, serif;
     color: darkblue;

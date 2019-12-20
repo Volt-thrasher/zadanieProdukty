@@ -24,7 +24,9 @@
 <div class="form">
 <form method="post" th:action="@{/home}" th:object="${product}">
     Nazwa : <input type="text" name="name" th:field="*{title}"><br/>
-    Cena : <input type="text" name="price" th:field="*{price}"><br/>
+    <div class="price">
+        Cena : <input type="text" name="price" th:field="*{price}"><br/>
+    </div>
     <input type="submit" value="Dodaj">
 </form>
 </div>
