@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Moja lista produktow</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<div class="header">
 <header>
     <h1>Dodaj nowy produkt</h1>
 </header>
+</div>
+<div class="link">
 <h3>
     <a th:href="@{/list}" th:text="|Do listy|">
     </a>
@@ -16,10 +20,13 @@
     <a th:href="@{/array}" th:text="|Do tabeli|">
     </a>
 </h3>
+</div>
+<div class="form">
 <form method="post" th:action="@{/home}" th:object="${product}">
     Nazwa : <input type="text" name="name" th:field="*{title}"><br/>
     Cena : <input type="text" name="price" th:field="*{price}"><br/>
     <input type="submit" value="Dodaj">
 </form>
+</div>
 </body>
 </html>
