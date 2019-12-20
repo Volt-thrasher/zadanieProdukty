@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Produkty (lista)</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<div class="header">
 <header>
     <h1>Lista zakupow</h1>
 </header>
+</div>
 <h3>
     <a th:href="@{/home}" th:text="|Do strony domowej|"></a>
 </h3>
+<div class="list">
 <table>
     <thead>
     <tr>
@@ -25,5 +29,6 @@
     </tr>
     </tbody>
 </table>
+</div>
 </body>
 </html>

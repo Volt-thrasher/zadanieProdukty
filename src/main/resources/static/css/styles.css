@@ -15,3 +15,13 @@
     color: darkcyan;
     font-family: Calibri, serif;
 }
+
+.success {
+    font-family: Calibri, serif;
+    color: darkblue;
+}
+
+.list {
+    font-family: Calibri, serif;
+    color: darkblue;
+}

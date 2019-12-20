@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Produkty (lista)</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
+<div class="header">
 <header>
     <h1>Lista zakupow</h1>
 </header>
+</div>
+<div class="link">
 <h3>
     <a th:href="@{/home}" th:text="|Do strony domowej|"></a>
 </h3>
+</div>
+<div class="list">
 <ul th:href="@{/list}" th:each="p :${products}">
     <li>
         <h3 th:text="${p.title}+| | + ${p.price}"></h3>
     </li>
 </ul>
+</div>
 </body>
 </html>
